@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-130dp"
+        android:src="@drawable/background">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/text_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome"
+        android:textSize="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:letterSpacing="0.3"
+        android:textColor="@color/white">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/gambar"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:src="@drawable/human"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/text_welcome"
+        android:layout_marginTop="35dp">
+    </ImageView>
+
+
+    <ImageView
+        android:id="@+id/icon_uname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_account_circle_24"
+        android:layout_below="@+id/gambar"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="7dp">
+    </ImageView>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/empty_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gambar"
+        android:hint="Enter your username"
+        android:textSize="14dp"
+        android:layout_toEndOf="@+id/icon_uname"
+        android:layout_alignTop="@+id/icon_uname"
+        android:layout_alignBottom="@+id/icon_uname"
+        android:layout_marginRight="40dp">
+    </com.google.android.material.textfield.TextInputEditText>
+
+    <ImageView
+        android:id="@+id/icon_pw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_vpn_key_24"
+        android:layout_below="@+id/icon_uname"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="7dp">
+    </ImageView>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/empty_text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/empty_text"
+        android:hint="Enter your password"
+        android:textSize="14dp"
+        android:layout_toEndOf="@+id/icon_pw"
+        android:layout_alignTop="@+id/icon_pw"
+        android:layout_alignBottom="@+id/icon_pw"
+        android:layout_marginEnd="40dp"
+        android:drawableRight="@drawable/baseline_visibility_24"
+        >
+    </com.google.android.material.textfield.TextInputEditText>
+
+<!--    <CheckBox-->
+<!--        android:id="@+id/checkBox"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/remember"-->
+<!--        android:layout_below="@id/icon_pw"-->
+<!--        android:layout_marginLeft="40dp"-->
+<!--        android:textColor="#0D65F8"-->
+<!--        app:backgroundTint="#0D65F8">-->
+<!--    </CheckBox>-->
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/materialCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/remember"
+        app:buttonTint="#0D65F8"
+        android:layout_below="@+id/icon_pw"
+        android:layout_marginLeft="40dp"
+        android:textColor="#0D65F8">
+    </com.google.android.material.checkbox.MaterialCheckBox>
+
+
+    <Button
+        android:id="@+id/forgetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/icon_pw"
+        android:layout_alignParentEnd="true"
+        android:text="@string/forget"
+        android:textColor="#0D65F8"
+        android:background="@color/material_on_surface_disabled"
+        android:layout_marginEnd="25dp">
+    </Button>
+
+
+    <Button
+        android:id="@+id/tombol_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/forgetButton"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:text="@string/login"
+        android:textSize="20dp"
+        android:backgroundTint="#FACEE4">
+    </Button>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tombol_login"
+        android:background="@color/material_on_surface_disabled"
+        android:textColor="#0D65F8"
+        android:text="@string/other"
+        android:layout_centerVertical="true">
+    </Button>
+
+
+</RelativeLayout>
